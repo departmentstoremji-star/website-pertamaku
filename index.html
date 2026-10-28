@@ -37,7 +37,29 @@
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/13.1.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/13.1.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDzSlgERmKV86DMzxKmDfjlBhuPOHfx1JY",
+    authDomain: "mechmar-stock.firebaseapp.com",
+    projectId: "mechmar-stock",
+    storageBucket: "mechmar-stock.firebasestorage.app",
+    messagingSenderId: "836145399985",
+    appId: "1:836145399985:web:17f25497270e3413b47a90",
+    measurementId: "G-69QXSQ22RD"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
     <!-- HEADER / NAVIGATION -->
     <header class="bg-slate-900 text-white sticky top-0 z-40 shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
